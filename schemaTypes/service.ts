@@ -16,8 +16,8 @@ export default {
       options: {
         list: [
           { title: 'Vision', value: 'Vision' },
-          { title: 'Scale', value: 'Scale' },
-          { title: 'Thrive', value: 'Thrive' }
+          { title: 'Mobilise', value: 'Mobilise' },
+          { title: 'Support', value: 'Support' }
         ]
       },
       validation: (Rule: any) => Rule.required()

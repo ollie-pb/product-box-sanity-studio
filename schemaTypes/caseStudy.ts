@@ -10,19 +10,6 @@ export default {
       validation: (Rule: any) => Rule.required()
     },
     {
-      name: 'service',
-      title: 'Service Phase',
-      type: 'string',
-      options: {
-        list: [
-          { title: 'Vision', value: 'Vision' },
-          { title: 'Mobilise', value: 'Mobilise' },
-          { title: 'Support', value: 'Support' }
-        ]
-      },
-      validation: (Rule: any) => Rule.required()
-    },
-    {
       name: 'tagline',
       title: 'Project Tagline',
       type: 'string',

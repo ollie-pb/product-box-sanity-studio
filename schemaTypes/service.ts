@@ -10,19 +10,6 @@ export default {
       validation: (Rule: any) => Rule.required()
     },
     {
-      name: 'phase',
-      title: 'Phase',
-      type: 'string',
-      options: {
-        list: [
-          { title: 'Vision', value: 'Vision' },
-          { title: 'Mobilise', value: 'Mobilise' },
-          { title: 'Support', value: 'Support' }
-        ]
-      },
-      validation: (Rule: any) => Rule.required()
-    },
-    {
       name: 'icon',
       title: 'Icon Name',
       type: 'string',

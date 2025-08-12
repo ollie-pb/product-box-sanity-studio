@@ -4,6 +4,7 @@ import caseStudy from './caseStudy'
 import contactInfo from './contactInfo'
 import siteSettings from './siteSettings'
 import portfolio from './portfolio'
+import testimonial from './testimonial'
 
 export const schemaTypes = [
   hero,
@@ -11,5 +12,6 @@ export const schemaTypes = [
   caseStudy,
   contactInfo,
   siteSettings,
-  portfolio
+  portfolio,
+  testimonial
 ]

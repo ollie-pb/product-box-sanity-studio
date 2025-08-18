@@ -750,11 +750,11 @@
             },
             {
               "type": "string",
-              "value": "Mobilise"
+              "value": "Scale"
             },
             {
               "type": "string",
-              "value": "Support"
+              "value": "Thrive"
             }
           ]
         },
@@ -768,6 +768,34 @@
         "optional": true
       },
       "description": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "overview": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "challenge": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "solution": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "results": {
         "type": "objectAttribute",
         "value": {
           "type": "string"
@@ -855,6 +883,50 @@
         "value": {
           "type": "array",
           "of": {
+            "type": "object",
+            "attributes": {
+              "label": {
+                "type": "objectAttribute",
+                "value": {
+                  "type": "string"
+                },
+                "optional": true
+              },
+              "value": {
+                "type": "objectAttribute",
+                "value": {
+                  "type": "string"
+                },
+                "optional": true
+              },
+              "_type": {
+                "type": "objectAttribute",
+                "value": {
+                  "type": "string",
+                  "value": "metric"
+                }
+              }
+            },
+            "rest": {
+              "type": "object",
+              "attributes": {
+                "_key": {
+                  "type": "objectAttribute",
+                  "value": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "optional": true
+      },
+      "technologies": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "array",
+          "of": {
             "type": "string"
           }
         },
@@ -878,6 +950,14 @@
         "type": "objectAttribute",
         "value": {
           "type": "boolean"
+        },
+        "optional": true
+      },
+      "slug": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "inline",
+          "name": "slug"
         },
         "optional": true
       }
@@ -922,27 +1002,6 @@
         "type": "objectAttribute",
         "value": {
           "type": "string"
-        },
-        "optional": true
-      },
-      "phase": {
-        "type": "objectAttribute",
-        "value": {
-          "type": "union",
-          "of": [
-            {
-              "type": "string",
-              "value": "Vision"
-            },
-            {
-              "type": "string",
-              "value": "Mobilise"
-            },
-            {
-              "type": "string",
-              "value": "Support"
-            }
-          ]
         },
         "optional": true
       },
